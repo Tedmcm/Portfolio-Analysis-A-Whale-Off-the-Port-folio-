@@ -2,15 +2,14 @@
 
 ![Portfolio Analysis](Images/portfolio-analysis.png)
 
-## Background
 
 The investment division of Company X has been investing in algorithmic trading strategies. Some of the investment managers love them, some hate them, but they all think their way is best.
 
-You just learned these quantitative analysis techniques with Python and Pandas, so Company X has come to you with a challenge—to help him determine which portfolio is performing the best across many areas: volatility, returns, risk, and Sharpe ratios.
+Company X has came to me with a challenge—to help them determine which portfolio is performing the best across many areas: volatility, returns, risk, and Sharpe ratios.
 
-You will need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market (S&P 500).
+I created a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. I started with the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. I used this analysis to create a custom portfolio of stocks and compared its performance to that of the other portfolios, as well as the larger market (S&P 500).
 
-In this project, you will be accomplishing three main tasks:
+In this project, I will be looking to accomplishing three main tasks:
 
 1. [Read in and Wrangle Returns Data](#Prepare-the-Data)
 2. [Determine Success of Each Portfolio](#Conduct-Quantitative-Analysis)
@@ -18,13 +17,11 @@ In this project, you will be accomplishing three main tasks:
 
 ---
 
-## Instructions
-
 ### Prepare the Data
 
 First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historical prices. 
 
-1. Use Pandas to read in each of the [CSV files](Starter_Code/Resources) as a DataFrame. Be sure to convert the dates to a `DateTimeIndex`.
+1. I used Pandas to read in each of the [CSV files](Starter_Code/Resources) as a DataFrame. Making sure to convert the dates to a `DateTimeIndex`.
 
 2. Detect and remove null values.
 
@@ -72,7 +69,7 @@ Investment managers and their institutional investors look at the return-to-risk
 
 ### Create Custom Portfolio
 
-Company X is ecstatic that you were able to help him prove that the algorithmic trading portfolios are doing so well compared to the market and whales' portfolios. However, now you are wondering whether you can choose your own portfolio that performs just as well as the algorithmic portfolios. Investigate by doing the following:
+Company X was ecstatic that I was able to help them prove that the algorithmic trading portfolios are doing so well compared to the market and whales' portfolios. However, now im  wondering whether I can choose my own portfolio that performs just as well as the algorithmic portfolios. I Investigates by doing the following exercise:
 
 1. Visit [Google Sheets](https://docs.google.com/spreadsheets/) and use the in-built Google Finance function to choose 3-5 stocks for your own portfolio.
 
@@ -80,18 +77,18 @@ Company X is ecstatic that you were able to help him prove that the algorithmic 
 
 3. Calculate the returns for each stock.
 
-4. Using those returns, calculate the weighted returns for your entire portfolio assuming an equal number of shares for each stock.
+4. Using those returns, calculate the weighted returns for my entire portfolio assuming an equal number of shares for each stock.
 
-5. Add your portfolio returns to the DataFrame with the other portfolios and rerun the analysis. How does your portfolio fair?
+5. Add My portfolio returns to the DataFrame with the other portfolios and rerun the analysis. How did my portfolio fair?
 
 
-## The analysis should include the following:
+## The analysis included the following:
 
 - Using all portfolios:
   - The annualized standard deviation (252 trading days) for all portfolios.
   - The plotted rolling standard deviation using a 21 trading day window for all portfolios.
   - The calculated annualized Sharpe Ratios and the accompanying bar plot visualization.
   - A correlation table.
-- Using your custom portfolio and one other of your choosing:
-  - How does your portfolio fair?
+- Using my custom portfolio and one other of my choosing:
+  - How did my portfolio fair?
 
